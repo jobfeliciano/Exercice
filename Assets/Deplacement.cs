@@ -4,20 +4,25 @@ using UnityEngine;
 
 public class Deplacement : MonoBehaviour
 {
-    [SerializeField] private float _speed = 2f;
+    public float _amplitude = 5f;
+    public float _speed = 1f;
 
-    private Vector3 _direction = new Vector3(0, 0, 0);
-    private void Start()
+
+
+    private float _startPosY;
+    private Vector3 _newPos;
+    // Start is called before the first frame update
+    void Start()
     {
-        
+        _startPosY = transform.position.y;
     }
+
+
+
     // Update is called once per frame
     void Update()
     {
-        
-       
-
-
-        transform.position += _direction * _speed * Time.deltaTime;
+        _newPos.y = _startPosY + _amplitude * Mathf.Sin(_speed * Time.time);
+        transform.position = _newPos;
     }
 }

@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class Porte : MonoBehaviour
 {
-    public float _amplitude = 1f;
+    public float _amplitude = 5f;
     public float _changeScaleSpeed = 1f;
 
     private Vector3 _newScale;
@@ -20,9 +20,7 @@ public class Porte : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        _newScale.y = _startScaleY + 2 - _amplitude * Mathf.Sin(_changeScaleSpeed * Time.time);
-        _newScale.x = transform.localScale.x;
-        _newScale.z = transform.localScale.z;
-        transform.localScale = _newScale; ;
+        _newScale.y = _startScaleY + _amplitude * Mathf.Sin(_changeScaleSpeed * Time.time);
+        transform.localScale = _newScale;
     }
 }

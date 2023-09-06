@@ -137,7 +137,7 @@ GameObject:
   - component: {fileID: 490792178}
   - component: {fileID: 490792182}
   m_Layer: 6
-  m_Name: Cube (3)
+  m_Name: Mur 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -251,7 +251,7 @@ GameObject:
   - component: {fileID: 733976102}
   - component: {fileID: 733976106}
   m_Layer: 6
-  m_Name: Cube (2)
+  m_Name: Mur 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -365,7 +365,7 @@ GameObject:
   - component: {fileID: 955123964}
   - component: {fileID: 955123968}
   m_Layer: 6
-  m_Name: Cube (1)
+  m_Name: Mur 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -915,7 +915,7 @@ GameObject:
   - component: {fileID: 1262745663}
   - component: {fileID: 1262745667}
   m_Layer: 6
-  m_Name: Cube (4)
+  m_Name: Mur 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

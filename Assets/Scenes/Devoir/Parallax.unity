@@ -133,6 +133,8 @@ GameObject:
   m_Component:
   - component: {fileID: 365517125}
   - component: {fileID: 365517124}
+  - component: {fileID: 365517126}
+  - component: {fileID: 365517127}
   m_Layer: 0
   m_Name: BackGround
   m_TagString: Untagged
@@ -200,13 +202,49 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 365517123}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1, y: 1, z: 1}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 2.89, y: 1, z: 1}
+  m_LocalScale: {x: 1.5038, y: 1.5038, z: 1.5038}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!50 &365517126
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 365517123}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!114 &365517127
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 365517123}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f663bb5e7a10024a802478b0ad9575d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _acceleration: 0.5
+  _rigidbody: {fileID: 365517126}
+  _speed: 0
 --- !u!1 &782553992
 GameObject:
   m_ObjectHideFlags: 0
@@ -428,7 +466,7 @@ GameObject:
   - component: {fileID: 1102683202}
   - component: {fileID: 1102683204}
   - component: {fileID: 1102683206}
-  - component: {fileID: 1102683205}
+  - component: {fileID: 1102683207}
   m_Layer: 0
   m_Name: Vaisseau Visuel
   m_TagString: Untagged
@@ -444,7 +482,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1102683201}
   m_LocalRotation: {x: 0, y: 0, z: -0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: -16.26, y: 0, z: 0}
+  m_LocalPosition: {x: -16.15, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -503,23 +541,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1102683205
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1102683201}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e84364ef43e2620489c742f78999f262, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _acceleration: 0.5
-  _maxSpeed: 5
-  _rotationSpeed: 30
-  _rigidbody: {fileID: 1102683206}
-  _speed: 0
 --- !u!50 &1102683206
 Rigidbody2D:
   serializedVersion: 4
@@ -541,3 +562,20 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1102683207
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1102683201}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e84364ef43e2620489c742f78999f262, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _acceleration: 0.5
+  _maxSpeed: 5
+  _rotationSpeed: 30
+  _rigidbody: {fileID: 1102683206}
+  _speed: 0

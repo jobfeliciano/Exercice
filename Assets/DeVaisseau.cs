@@ -19,11 +19,11 @@ public class DeVaisseau : MonoBehaviour
     {
         if ((Input.GetKey(KeyCode.UpArrow)) && (_speed < _maxSpeed))
         {
-                _speed += _acceleration;            
+                _speed += _acceleration*Time.deltaTime;            
         }
         else if((Input.GetKey(KeyCode.DownArrow)) && (_speed > 0))
         {
-                _speed -= _acceleration;        
+                _speed -= _acceleration*Time.deltaTime;        
         }
         else if (Input.GetKey(KeyCode.RightArrow))
         {

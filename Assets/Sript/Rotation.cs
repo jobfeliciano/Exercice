@@ -40,4 +40,8 @@ public class Rotation : MonoBehaviour
             transform.localScale -= new Vector3(1, 1, 1) * _changeScaleSpeed * Time.deltaTime;
         }
     }
+    private void OnCollisionEnter(Collision collision)
+    {
+        Debug.Log(collision.gameObject.name);
+    }
 }

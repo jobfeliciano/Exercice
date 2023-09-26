@@ -11,7 +11,7 @@ public class Jumper : MonoBehaviour
     private Vector3 _direction;
     private Boolean _isCollide = true;
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         float x_direction = 0;
         float y_direction = _rigidbody.velocity.y;
